@@ -34,6 +34,3 @@ def calculate(e):
 
     display(f"Addition: {addition}", target="output")
     display(f"Subtraction: {subtraction}", target="output")
-
-
-
