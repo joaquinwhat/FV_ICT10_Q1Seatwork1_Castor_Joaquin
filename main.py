@@ -1,4 +1,4 @@
-from pyscript import display
+from pyscript import document, display
 
 name = "Joaquin" #String
 age = 14 #integer
@@ -22,3 +22,18 @@ display("Student:", student_type, target="output")
 display("Student Info:", student_info, target="output")
 display("Favorite Fruits:", fruits, target="output")
 display("Days in a week:", days, target="output")
+
+def calculate(e):
+    document.getElementById("output").innerHTML = ""
+
+    num1 = float(document.getElementById("input1").value)
+    num2 = float(document.getElementById("input2").value)
+
+    addition = num1 + num2
+    subtraction = num1 - num2
+
+    display(f"Addition: {addition}", target="output")
+    display(f"Subtraction: {subtraction}", target="output")
+
+
+
